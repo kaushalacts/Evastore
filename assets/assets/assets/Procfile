@@ -1,0 +1,1 @@
+web: gunicorn Evastore.wsgi --log-file -
