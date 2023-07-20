@@ -77,20 +77,20 @@ WSGI_APPLICATION = 'Evastore.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-MYSQLDATABASE = 'railway'
-MYSQLHOST = 'containers-us-west-140.railway.app'
-MYSQLPASSWORD = 't9LvZ9E3Xy1TSnuBWBwJ'
-MYSQLPORT = '6886'
-MYSQLUSER = 'root'
+#MYSQLDATABASE = 'railway'
+#MYSQLHOST = 'containers-us-west-140.railway.app'
+#MYSQLPASSWORD = 't9LvZ9E3Xy1TSnuBWBwJ'
+#MYSQLPORT = '6886'
+#MYSQLUSER = 'root'
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': MYSQLDATABASE,
-        'HOST': MYSQLHOST,
-        'PORT': MYSQLPORT,
-        'USER': MYSQLUSER,
-        'PASSWORD': MYSQLPASSWORD,
+        'NAME': 'evastore',
+        'HOST': 'local',
+        'PORT': '3306',
+        'USER': 'root',
+        'PASSWORD': '',
     }
 }
 
